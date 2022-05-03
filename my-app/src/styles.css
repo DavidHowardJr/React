@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #ff8800, #ffe600);
+  background: linear-gradient(to right, #6d4908a6, #e9debcea);
 }
 
 .calculator-grid {
@@ -17,7 +17,7 @@ body {
 
 .calculator-grid > button:hover,
 .calculator-grid > button:focus {
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.938);
 }
 
 .span-two {
@@ -26,7 +26,7 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(158, 71, 216, 0.582);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -37,11 +37,11 @@ body {
 }
 
 .output .previous-operand {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(28, 228, 194, 0.726);
   font-size: 1.5rem;
 }
 
 .output .current-operand {
-  color: white;
+  color: rgba(9, 138, 189, 0.76);
   font-size: 2.5rem;
 }
