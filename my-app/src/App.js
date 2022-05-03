@@ -76,7 +76,7 @@ function reducer(state, { type, payload }) {
 
       return {
         ...state,
-        currentOperand: state.currentOperand.slice(0-, -1)
+        currentOperand: state.currentOperand.slice(0, -1)
       }
     case ACTIONS.EVALUATE:
       if (
@@ -97,7 +97,7 @@ function reducer(state, { type, payload }) {
 }
 
 function evaluate({ currentOperand, previousOperand, operation }) {
-  const prev = parseFloate(previousOperand);
+  const prev = parseFloat(previousOperand);
   const current = parseFloat(currentOperand);
   if (isNaN(prev) || isNaN(current)) return "";
   let computation = "";
