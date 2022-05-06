@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import TodoForm from "./TodoForm";
+import React, { useState } from 'react';
+import Todo from './Todo';
+import TodoForm from './TodoForm';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
 
-    const addTodo = (todo) => {
+    const addTodo = todo => {
         if (!todo.text || /^\s*$/.test(todo.text)) {
             return;
         }
@@ -47,7 +48,7 @@ function TodoList() {
     <div>
       <h1>What's Todays Plan?</h1>
       <TodoForm onSubmit={addTodo} />
-          <todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
     </div>
   );
 }
