@@ -48,7 +48,9 @@ function TodoList() {
     <div>
       <h1>What's Todays Plan?</h1>
       <TodoForm onSubmit={addTodo} />
-      <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      {todos.map((todo) => (
+        <Todo todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      ))}
     </div>
   );
 }
