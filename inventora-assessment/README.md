@@ -1,1 +1,0 @@
-# inventora-assessment
