@@ -23,7 +23,7 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-8">
-            <input placeholder="cockballs" type="text" className="form-control" value={userInput} onChange={handleChange} />
+            <input placeholder="type here" type="text" className="form-control" value={userInput} onChange={handleChange} />
           </div>
           <div className="col-4">
             <button type="submit" className="btn btn-primary">Add Todo</button>
